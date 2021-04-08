@@ -8,7 +8,7 @@ describe( "Formatter", () => {
       expect( Formatter.capitalize( "a" ) ).to.equal( "A" )
       expect( Formatter.capitalize( "alligator" ) ).to.equal( "Alligator" )
       expect( Formatter.capitalize( "BURSTING BALLOON" ) ).to.equal( "BURSTING BALLOON" )
-    } )
+    } ) 
   } )
 
   describe( "sanitize", () => {
