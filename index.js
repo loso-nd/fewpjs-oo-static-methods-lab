@@ -15,19 +15,24 @@ class Formatter {
 
   static titleize(string) {
      console.log(string)
-    // return string.charAt(0).toUpperCase() 
+    return string.charAt(0).toUpperCase() 
 
-    string.split('').map(word => {
-      if(word.length < 4){
-          return word
-      } else {
-         return word.charAt(0).toUpperCase() + word.slice(1)
-      }}).join(" ")
 
-      return  test
   }
 
 
 }
+
+// return string.split(' ').map(word => {
+//   if(word.charAt(0) == "a"){
+//     return word.charAt(0).toUpperCase() + word.slice(1)
+//   }
+//   else if(forbidden.includes(word) || forbidden.includes(word) === "and"){
+//       return word
+//   } else {
+//     return word.charAt(0).toUpperCase() + word.slice(1)
+//   }}).join(" ")
+
+// }
 
 // const firstLetters = (phrase) => phrase.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ")
