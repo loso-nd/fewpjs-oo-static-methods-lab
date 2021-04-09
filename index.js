@@ -15,10 +15,23 @@ class Formatter {
 
   static titleize(string) {
      console.log(string)
-    return string.charAt(0).toUpperCase() 
 
+    let forbidden = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from']
 
+    let result = string.split(' ').map(word => {
+      // if(word.charAt(0)){
+      //   return word.charAt(0).toUpperCase() + word.slice(1)
+      // }
+      // else 
+      if(forbidden.includes(word)){
+          return word
+      } else {
+        return word.charAt(0).toUpperCase() + word.slice(1)
+      }}).join(" ")
+
+      return result.charAt(0).toUpperCase() + result.slice(1)
   }
+
 
 
 }
